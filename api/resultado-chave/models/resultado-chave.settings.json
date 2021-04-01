@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resultado_chaves",
+  "info": {
+    "name": "ResultadoChave"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "objetivo": {
+      "model": "objetivo"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "responsavel": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "TipoAtualizacao": {
+      "type": "enumeration",
+      "enum": [
+        "percentage",
+        "thru_complete_tasks",
+        "target_value"
+      ]
+    }
+  }
+}

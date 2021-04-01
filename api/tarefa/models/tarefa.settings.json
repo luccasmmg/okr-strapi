@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tarefas",
+  "info": {
+    "name": "Tarefa"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "resultado_chave": {
+      "model": "resultado-chave"
+    },
+    "Descricao": {
+      "type": "text"
+    },
+    "PrazoEntrega": {
+      "type": "date"
+    },
+    "responsavel": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "doing",
+        "paused",
+        "canceled",
+        "not_started"
+      ]
+    }
+  }
+}

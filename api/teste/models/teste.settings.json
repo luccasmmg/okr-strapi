@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testes",
+  "info": {
+    "name": "Teste"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "Numero": {
+      "type": "integer"
+    },
+    "Boleano": {
+      "type": "boolean"
+    }
+  }
+}

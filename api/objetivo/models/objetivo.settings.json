@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "objetivos",
+  "info": {
+    "name": "Objetivo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "Descricao": {
+      "type": "string"
+    },
+    "DataFim": {
+      "type": "date"
+    },
+    "DataInicio": {
+      "type": "date"
+    },
+    "responsavel": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "Categoria": {
+      "type": "enumeration",
+      "enum": [
+        "pessoal",
+        "empresa",
+        "equipe"
+      ]
+    }
+  }
+}

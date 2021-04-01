@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/objetivos",
+      "handler": "objetivo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/objetivos/count",
+      "handler": "objetivo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/objetivos/:id",
+      "handler": "objetivo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/objetivos",
+      "handler": "objetivo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/objetivos/:id",
+      "handler": "objetivo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/objetivos/:id",
+      "handler": "objetivo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

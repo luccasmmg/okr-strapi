@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colaboradors",
+  "info": {
+    "name": "Colaborador"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "objetivo": {
+      "model": "objetivo"
+    }
+  }
+}
