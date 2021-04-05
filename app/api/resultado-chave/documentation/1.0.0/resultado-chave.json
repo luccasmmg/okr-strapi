@@ -535,48 +535,6 @@
           "id": {
             "type": "string"
           },
-          "objetivo": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Nome": {
-                "type": "string"
-              },
-              "Descricao": {
-                "type": "string"
-              },
-              "DataFim": {
-                "type": "string"
-              },
-              "DataInicio": {
-                "type": "string"
-              },
-              "responsavel": {
-                "type": "string"
-              },
-              "Categoria": {
-                "type": "string",
-                "enum": [
-                  "pessoal",
-                  "empresa",
-                  "equipe"
-                ]
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "nome": {
             "type": "string"
           },
@@ -636,6 +594,98 @@
               "target_value"
             ]
           },
+          "tarefas": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Descricao": {
+                  "type": "string"
+                },
+                "PrazoEntrega": {
+                  "type": "string"
+                },
+                "responsavel": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "doing",
+                    "paused",
+                    "canceled",
+                    "not_started",
+                    "done"
+                  ]
+                },
+                "resultado_chave": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "objetivo": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Nome": {
+                "type": "string"
+              },
+              "Descricao": {
+                "type": "string"
+              },
+              "DataFim": {
+                "type": "string"
+              },
+              "DataInicio": {
+                "type": "string"
+              },
+              "responsavel": {
+                "type": "string"
+              },
+              "Categoria": {
+                "type": "string",
+                "enum": [
+                  "pessoal",
+                  "empresa",
+                  "equipe"
+                ]
+              },
+              "resultados_chave": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -644,9 +694,6 @@
       },
       "NewResultado-chave": {
         "properties": {
-          "objetivo": {
-            "type": "string"
-          },
           "nome": {
             "type": "string"
           },
@@ -663,6 +710,15 @@
               "thru_complete_tasks",
               "target_value"
             ]
+          },
+          "tarefas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "objetivo": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

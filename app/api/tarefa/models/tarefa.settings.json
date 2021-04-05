@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "tarefas",
   "info": {
-    "name": "Tarefa"
+    "name": "Tarefa",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "resultado_chave": {
-      "model": "resultado-chave"
-    },
     "Descricao": {
       "type": "text"
     },
@@ -29,8 +27,13 @@
         "doing",
         "paused",
         "canceled",
-        "not_started"
+        "not_started",
+        "done"
       ]
+    },
+    "resultado_chave": {
+      "via": "tarefas",
+      "model": "resultado-chave"
     }
   }
 }

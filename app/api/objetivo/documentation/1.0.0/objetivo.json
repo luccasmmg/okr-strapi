@@ -589,6 +589,54 @@
               "equipe"
             ]
           },
+          "resultados_chave": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nome": {
+                  "type": "string"
+                },
+                "descricao": {
+                  "type": "string"
+                },
+                "responsavel": {
+                  "type": "string"
+                },
+                "TipoAtualizacao": {
+                  "type": "string",
+                  "enum": [
+                    "percentage",
+                    "thru_complete_tasks",
+                    "target_value"
+                  ]
+                },
+                "tarefas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "objetivo": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -621,6 +669,12 @@
               "empresa",
               "equipe"
             ]
+          },
+          "resultados_chave": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

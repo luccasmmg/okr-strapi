@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "resultado_chaves",
   "info": {
-    "name": "ResultadoChave"
+    "name": "ResultadosChave",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "objetivo": {
-      "model": "objetivo"
-    },
     "nome": {
       "type": "string"
     },
@@ -30,6 +28,14 @@
         "thru_complete_tasks",
         "target_value"
       ]
+    },
+    "tarefas": {
+      "collection": "tarefa",
+      "via": "resultado_chave"
+    },
+    "objetivo": {
+      "model": "objetivo",
+      "via": "resultados_chave"
     }
   }
 }

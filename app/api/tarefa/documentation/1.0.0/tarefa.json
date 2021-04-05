@@ -522,45 +522,6 @@
           "id": {
             "type": "string"
           },
-          "resultado_chave": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "objetivo": {
-                "type": "string"
-              },
-              "nome": {
-                "type": "string"
-              },
-              "descricao": {
-                "type": "string"
-              },
-              "responsavel": {
-                "type": "string"
-              },
-              "TipoAtualizacao": {
-                "type": "string",
-                "enum": [
-                  "percentage",
-                  "thru_complete_tasks",
-                  "target_value"
-                ]
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "Descricao": {
             "type": "string"
           },
@@ -619,8 +580,54 @@
               "doing",
               "paused",
               "canceled",
-              "not_started"
+              "not_started",
+              "done"
             ]
+          },
+          "resultado_chave": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nome": {
+                "type": "string"
+              },
+              "descricao": {
+                "type": "string"
+              },
+              "responsavel": {
+                "type": "string"
+              },
+              "TipoAtualizacao": {
+                "type": "string",
+                "enum": [
+                  "percentage",
+                  "thru_complete_tasks",
+                  "target_value"
+                ]
+              },
+              "tarefas": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "objetivo": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -630,9 +637,6 @@
       },
       "NewTarefa": {
         "properties": {
-          "resultado_chave": {
-            "type": "string"
-          },
           "Descricao": {
             "type": "string"
           },
@@ -649,8 +653,12 @@
               "doing",
               "paused",
               "canceled",
-              "not_started"
+              "not_started",
+              "done"
             ]
+          },
+          "resultado_chave": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

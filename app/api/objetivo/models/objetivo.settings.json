@@ -34,6 +34,10 @@
         "empresa",
         "equipe"
       ]
+    },
+    "resultados_chave": {
+      "via": "objetivo",
+      "collection": "resultado-chave"
     }
   }
 }
