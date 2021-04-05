@@ -638,7 +638,7 @@
               }
             }
           },
-          "objetivo": {
+          "idObjetivo": {
             "required": [
               "id"
             ],
@@ -669,7 +669,7 @@
                   "equipe"
                 ]
               },
-              "resultados_chave": {
+              "resultados_chaves": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -717,7 +717,7 @@
               "type": "string"
             }
           },
-          "objetivo": {
+          "idObjetivo": {
             "type": "string"
           },
           "published_at": {

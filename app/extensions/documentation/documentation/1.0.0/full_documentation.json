@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/05/2021 6:21:22 PM"
+    "x-generation-date": "04/05/2021 9:17:56 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5436,7 +5436,7 @@
                   "equipe"
                 ]
               },
-              "resultados_chave": {
+              "resultados_chaves": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -5554,7 +5554,7 @@
               "equipe"
             ]
           },
-          "resultados_chave": {
+          "resultados_chaves": {
             "type": "array",
             "items": {
               "required": [
@@ -5587,7 +5587,7 @@
                     "type": "string"
                   }
                 },
-                "objetivo": {
+                "idObjetivo": {
                   "type": "string"
                 },
                 "published_at": {
@@ -5635,7 +5635,7 @@
               "equipe"
             ]
           },
-          "resultados_chave": {
+          "resultados_chaves": {
             "type": "array",
             "items": {
               "type": "string"
@@ -5764,7 +5764,7 @@
               }
             }
           },
-          "objetivo": {
+          "idObjetivo": {
             "required": [
               "id"
             ],
@@ -5795,7 +5795,7 @@
                   "equipe"
                 ]
               },
-              "resultados_chave": {
+              "resultados_chaves": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -5843,7 +5843,7 @@
               "type": "string"
             }
           },
-          "objetivo": {
+          "idObjetivo": {
             "type": "string"
           },
           "published_at": {
@@ -5897,7 +5897,7 @@
                   "equipe"
                 ]
               },
-              "resultados_chave": {
+              "resultados_chaves": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -6044,7 +6044,7 @@
                   "type": "string"
                 }
               },
-              "objetivo": {
+              "idObjetivo": {
                 "type": "string"
               },
               "published_at": {

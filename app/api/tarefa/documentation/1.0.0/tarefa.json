@@ -615,7 +615,7 @@
                   "type": "string"
                 }
               },
-              "objetivo": {
+              "idObjetivo": {
                 "type": "string"
               },
               "published_at": {

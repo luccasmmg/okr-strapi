@@ -597,7 +597,7 @@
                   "equipe"
                 ]
               },
-              "resultados_chave": {
+              "resultados_chaves": {
                 "type": "array",
                 "items": {
                   "type": "string"

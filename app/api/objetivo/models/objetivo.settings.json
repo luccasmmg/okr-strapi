@@ -35,8 +35,7 @@
         "equipe"
       ]
     },
-    "resultados_chave": {
-      "via": "objetivo",
+    "resultados_chaves": {
       "collection": "resultado-chave"
     }
   }

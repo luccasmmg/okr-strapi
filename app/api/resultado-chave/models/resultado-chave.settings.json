@@ -33,9 +33,8 @@
       "collection": "tarefa",
       "via": "resultado_chave"
     },
-    "objetivo": {
-      "model": "objetivo",
-      "via": "resultados_chave"
+    "idObjetivo": {
+      "model": "objetivo"
     }
   }
 }
