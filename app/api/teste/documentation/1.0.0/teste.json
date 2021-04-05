@@ -522,15 +522,6 @@
           "id": {
             "type": "string"
           },
-          "Nome": {
-            "type": "string"
-          },
-          "Numero": {
-            "type": "integer"
-          },
-          "Boleano": {
-            "type": "boolean"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -539,15 +530,6 @@
       },
       "NewTeste": {
         "properties": {
-          "Nome": {
-            "type": "string"
-          },
-          "Numero": {
-            "type": "integer"
-          },
-          "Boleano": {
-            "type": "boolean"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
