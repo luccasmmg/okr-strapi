@@ -33,8 +33,12 @@
       "collection": "tarefa",
       "via": "resultado_chave"
     },
-    "idObjetivo": {
-      "model": "objetivo"
+    "objetivo": {
+      "model": "objetivo",
+      "via": "resultados_chaves"
+    },
+    "Tags": {
+      "type": "json"
     }
   }
 }

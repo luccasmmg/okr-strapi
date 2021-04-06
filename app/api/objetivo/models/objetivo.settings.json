@@ -36,7 +36,11 @@
       ]
     },
     "resultados_chaves": {
+      "via": "objetivo",
       "collection": "resultado-chave"
+    },
+    "Tags": {
+      "type": "json"
     }
   }
 }

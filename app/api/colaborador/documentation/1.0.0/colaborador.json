@@ -603,6 +603,9 @@
                   "type": "string"
                 }
               },
+              "Tags": {
+                "type": "object"
+              },
               "published_at": {
                 "type": "string"
               },

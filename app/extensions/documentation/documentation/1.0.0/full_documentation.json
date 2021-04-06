@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/05/2021 9:17:56 PM"
+    "x-generation-date": "04/06/2021 5:08:39 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5442,6 +5442,9 @@
                   "type": "string"
                 }
               },
+              "Tags": {
+                "type": "object"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5587,8 +5590,11 @@
                     "type": "string"
                   }
                 },
-                "idObjetivo": {
+                "objetivo": {
                   "type": "string"
+                },
+                "Tags": {
+                  "type": "object"
                 },
                 "published_at": {
                   "type": "string"
@@ -5601,6 +5607,9 @@
                 }
               }
             }
+          },
+          "Tags": {
+            "type": "object"
           },
           "published_at": {
             "type": "string",
@@ -5640,6 +5649,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "Tags": {
+            "type": "object"
           },
           "published_at": {
             "type": "string",
@@ -5764,7 +5776,7 @@
               }
             }
           },
-          "idObjetivo": {
+          "objetivo": {
             "required": [
               "id"
             ],
@@ -5801,6 +5813,9 @@
                   "type": "string"
                 }
               },
+              "Tags": {
+                "type": "object"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5811,6 +5826,9 @@
                 "type": "string"
               }
             }
+          },
+          "Tags": {
+            "type": "object"
           },
           "published_at": {
             "type": "string",
@@ -5843,8 +5861,11 @@
               "type": "string"
             }
           },
-          "idObjetivo": {
+          "objetivo": {
             "type": "string"
+          },
+          "Tags": {
+            "type": "object"
           },
           "published_at": {
             "type": "string",
@@ -5866,54 +5887,6 @@
           "id": {
             "type": "string"
           },
-          "objetivo": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Nome": {
-                "type": "string"
-              },
-              "Descricao": {
-                "type": "string"
-              },
-              "DataFim": {
-                "type": "string"
-              },
-              "DataInicio": {
-                "type": "string"
-              },
-              "responsavel": {
-                "type": "string"
-              },
-              "Categoria": {
-                "type": "string",
-                "enum": [
-                  "pessoal",
-                  "empresa",
-                  "equipe"
-                ]
-              },
-              "resultados_chaves": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "Nome": {
             "type": "string"
           },
@@ -5925,9 +5898,6 @@
       },
       "NewTag": {
         "properties": {
-          "objetivo": {
-            "type": "string"
-          },
           "Nome": {
             "type": "string"
           },
@@ -6044,8 +6014,11 @@
                   "type": "string"
                 }
               },
-              "idObjetivo": {
+              "objetivo": {
                 "type": "string"
+              },
+              "Tags": {
+                "type": "object"
               },
               "published_at": {
                 "type": "string"

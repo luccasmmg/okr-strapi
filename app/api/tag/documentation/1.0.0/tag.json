@@ -522,54 +522,6 @@
           "id": {
             "type": "string"
           },
-          "objetivo": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Nome": {
-                "type": "string"
-              },
-              "Descricao": {
-                "type": "string"
-              },
-              "DataFim": {
-                "type": "string"
-              },
-              "DataInicio": {
-                "type": "string"
-              },
-              "responsavel": {
-                "type": "string"
-              },
-              "Categoria": {
-                "type": "string",
-                "enum": [
-                  "pessoal",
-                  "empresa",
-                  "equipe"
-                ]
-              },
-              "resultados_chaves": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "Nome": {
             "type": "string"
           },
@@ -581,9 +533,6 @@
       },
       "NewTag": {
         "properties": {
-          "objetivo": {
-            "type": "string"
-          },
           "Nome": {
             "type": "string"
           },
