@@ -586,7 +586,7 @@
               "DataInicio": {
                 "type": "string"
               },
-              "responsavel": {
+              "responsavelObjetivo": {
                 "type": "string"
               },
               "Categoria": {
@@ -596,12 +596,6 @@
                   "empresa",
                   "equipe"
                 ]
-              },
-              "resultados_chaves": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "Tags": {
                 "type": "object"

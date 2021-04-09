@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/09/2021 3:15:31 PM"
+    "x-generation-date": "04/09/2021 10:49:51 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4914,7 +4914,7 @@
               "DataInicio": {
                 "type": "string"
               },
-              "responsavel": {
+              "responsavelObjetivo": {
                 "type": "string"
               },
               "Categoria": {
@@ -4924,12 +4924,6 @@
                   "empresa",
                   "equipe"
                 ]
-              },
-              "resultados_chaves": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "Tags": {
                 "type": "object"
@@ -4993,7 +4987,7 @@
             "type": "string",
             "format": "date"
           },
-          "responsavel": {
+          "responsavelObjetivo": {
             "required": [
               "id",
               "username",
@@ -5046,57 +5040,6 @@
               "equipe"
             ]
           },
-          "resultados_chaves": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nome": {
-                  "type": "string"
-                },
-                "descricao": {
-                  "type": "string"
-                },
-                "responsavel": {
-                  "type": "string"
-                },
-                "TipoAtualizacao": {
-                  "type": "string",
-                  "enum": [
-                    "percentage",
-                    "thru_complete_tasks",
-                    "target_value"
-                  ]
-                },
-                "tarefas": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "objetivo": {
-                  "type": "string"
-                },
-                "Tags": {
-                  "type": "object"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "Tags": {
             "type": "object"
           },
@@ -5122,7 +5065,7 @@
             "type": "string",
             "format": "date"
           },
-          "responsavel": {
+          "responsavelObjetivo": {
             "type": "string"
           },
           "Categoria": {
@@ -5132,12 +5075,6 @@
               "empresa",
               "equipe"
             ]
-          },
-          "resultados_chaves": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "Tags": {
             "type": "object"
@@ -5221,49 +5158,8 @@
               "target_value"
             ]
           },
-          "tarefas": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Descricao": {
-                  "type": "string"
-                },
-                "PrazoEntrega": {
-                  "type": "string"
-                },
-                "responsavel": {
-                  "type": "string"
-                },
-                "status": {
-                  "type": "string",
-                  "enum": [
-                    "doing",
-                    "paused",
-                    "canceled",
-                    "not_started",
-                    "done"
-                  ]
-                },
-                "resultado_chave": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "Tags": {
+            "type": "object"
           },
           "objetivo": {
             "required": [
@@ -5285,7 +5181,7 @@
               "DataInicio": {
                 "type": "string"
               },
-              "responsavel": {
+              "responsavelObjetivo": {
                 "type": "string"
               },
               "Categoria": {
@@ -5295,12 +5191,6 @@
                   "empresa",
                   "equipe"
                 ]
-              },
-              "resultados_chaves": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "Tags": {
                 "type": "object"
@@ -5315,9 +5205,6 @@
                 "type": "string"
               }
             }
-          },
-          "Tags": {
-            "type": "object"
           },
           "published_at": {
             "type": "string",
@@ -5344,17 +5231,11 @@
               "target_value"
             ]
           },
-          "tarefas": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "Tags": {
+            "type": "object"
           },
           "objetivo": {
             "type": "string"
-          },
-          "Tags": {
-            "type": "object"
           },
           "published_at": {
             "type": "string",
@@ -5497,17 +5378,11 @@
                   "target_value"
                 ]
               },
-              "tarefas": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "Tags": {
+                "type": "object"
               },
               "objetivo": {
                 "type": "string"
-              },
-              "Tags": {
-                "type": "object"
               },
               "published_at": {
                 "type": "string"

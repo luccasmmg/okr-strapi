@@ -594,49 +594,8 @@
               "target_value"
             ]
           },
-          "tarefas": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Descricao": {
-                  "type": "string"
-                },
-                "PrazoEntrega": {
-                  "type": "string"
-                },
-                "responsavel": {
-                  "type": "string"
-                },
-                "status": {
-                  "type": "string",
-                  "enum": [
-                    "doing",
-                    "paused",
-                    "canceled",
-                    "not_started",
-                    "done"
-                  ]
-                },
-                "resultado_chave": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "Tags": {
+            "type": "object"
           },
           "objetivo": {
             "required": [
@@ -658,7 +617,7 @@
               "DataInicio": {
                 "type": "string"
               },
-              "responsavel": {
+              "responsavelObjetivo": {
                 "type": "string"
               },
               "Categoria": {
@@ -668,12 +627,6 @@
                   "empresa",
                   "equipe"
                 ]
-              },
-              "resultados_chaves": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "Tags": {
                 "type": "object"
@@ -688,9 +641,6 @@
                 "type": "string"
               }
             }
-          },
-          "Tags": {
-            "type": "object"
           },
           "published_at": {
             "type": "string",
@@ -717,17 +667,11 @@
               "target_value"
             ]
           },
-          "tarefas": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "Tags": {
+            "type": "object"
           },
           "objetivo": {
             "type": "string"
-          },
-          "Tags": {
-            "type": "object"
           },
           "published_at": {
             "type": "string",

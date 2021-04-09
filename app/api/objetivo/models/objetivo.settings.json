@@ -23,7 +23,7 @@
     "DataInicio": {
       "type": "date"
     },
-    "responsavel": {
+    "responsavelObjetivo": {
       "plugin": "users-permissions",
       "model": "user"
     },
@@ -34,10 +34,6 @@
         "empresa",
         "equipe"
       ]
-    },
-    "resultados_chaves": {
-      "via": "objetivo",
-      "collection": "resultado-chave"
     },
     "Tags": {
       "type": "json"

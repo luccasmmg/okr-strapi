@@ -609,17 +609,11 @@
                   "target_value"
                 ]
               },
-              "tarefas": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "Tags": {
+                "type": "object"
               },
               "objetivo": {
                 "type": "string"
-              },
-              "Tags": {
-                "type": "object"
               },
               "published_at": {
                 "type": "string"

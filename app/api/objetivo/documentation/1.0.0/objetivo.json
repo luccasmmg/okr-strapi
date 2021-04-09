@@ -536,7 +536,7 @@
             "type": "string",
             "format": "date"
           },
-          "responsavel": {
+          "responsavelObjetivo": {
             "required": [
               "id",
               "username",
@@ -589,57 +589,6 @@
               "equipe"
             ]
           },
-          "resultados_chaves": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nome": {
-                  "type": "string"
-                },
-                "descricao": {
-                  "type": "string"
-                },
-                "responsavel": {
-                  "type": "string"
-                },
-                "TipoAtualizacao": {
-                  "type": "string",
-                  "enum": [
-                    "percentage",
-                    "thru_complete_tasks",
-                    "target_value"
-                  ]
-                },
-                "tarefas": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "objetivo": {
-                  "type": "string"
-                },
-                "Tags": {
-                  "type": "object"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "Tags": {
             "type": "object"
           },
@@ -665,7 +614,7 @@
             "type": "string",
             "format": "date"
           },
-          "responsavel": {
+          "responsavelObjetivo": {
             "type": "string"
           },
           "Categoria": {
@@ -675,12 +624,6 @@
               "empresa",
               "equipe"
             ]
-          },
-          "resultados_chaves": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "Tags": {
             "type": "object"

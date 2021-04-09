@@ -29,16 +29,12 @@
         "target_value"
       ]
     },
-    "tarefas": {
-      "collection": "tarefa",
-      "via": "resultado_chave"
+    "Tags": {
+      "type": "json"
     },
     "objetivo": {
       "model": "objetivo",
-      "via": "resultados_chaves"
-    },
-    "Tags": {
-      "type": "json"
+      "autoPopulate": false
     }
   }
 }

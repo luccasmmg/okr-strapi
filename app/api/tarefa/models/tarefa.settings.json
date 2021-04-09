@@ -32,8 +32,8 @@
       ]
     },
     "resultado_chave": {
-      "via": "tarefas",
-      "model": "resultado-chave"
+      "model": "resultado-chave",
+	  "autoPopulate": false
     }
   }
 }
